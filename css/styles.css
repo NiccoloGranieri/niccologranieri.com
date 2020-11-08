@@ -1,0 +1,25 @@
+.lang-choice {
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18pt;
+    color: #9AA2B5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#link { 
+    color: #9AA2B5;
+    text-decoration: none;
+    transition: transform 0.5s;
+}
+
+#link:visited {
+    text-decoration: none;
+}
+
+#link:hover {
+    text-decoration: underline;
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
