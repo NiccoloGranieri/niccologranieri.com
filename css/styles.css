@@ -1,4 +1,9 @@
+body {
+    margin: 0px;
+}
+
 .lang-choice {
+    background-color: white;
     height: 100vh;
     font-family: 'Roboto', sans-serif;
     font-size: 18pt;
