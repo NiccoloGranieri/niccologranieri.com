@@ -1,5 +1,13 @@
 body {
     margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    color: #52576F;
+}
+
+.main-bio{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
 }
 
 .lang-choice {
@@ -7,23 +15,23 @@ body {
     height: 100vh;
     font-family: 'Roboto', sans-serif;
     font-size: 18pt;
-    color: #9AA2B5;
+    color: #52576F;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#link { 
-    color: #9AA2B5;
+#elegant-link { 
+    color: #52576F;
     text-decoration: none;
     transition: transform 0.5s;
 }
 
-#link:visited {
+#elegant-link:visited {
     text-decoration: none;
 }
 
-#link:hover {
+#elegant-link:hover {
     text-decoration: underline;
     transform: scale(1.1);
     transition: transform 0.5s;
