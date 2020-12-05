@@ -1,10 +1,46 @@
 body {
     margin: 0px;
+    padding: 20px 10vw;
     font-family: 'Roboto', sans-serif;
     color: #52576F;
 }
 
+pre {
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+.Menu-Bar {
+    min-height: 2.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+.ListItem {
+    margin-right: 1rem;
+}
+
+.LastItem {
+    margin-left: auto;
+}
+
+.downloads {
+    min-height: 2.75rem;
+    display: flex;
+}
+
 .main-bio{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.publications{
     display: flex;
     flex-direction: column;
     padding: 1rem;
@@ -19,6 +55,30 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.missing-page {
+    background-color: white;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18pt;
+    color: #52576F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.BibTex-Box {
+    background-color: #fafafa;
+    border-color: darkgray;
+    border-radius: 1px;
+    border-width: 0.01cm;
+    border-style: solid;
+}
+
+#BibTex-Code {
+    margin-left: 0.5rem;
 }
 
 #elegant-link { 
