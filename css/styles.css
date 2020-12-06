@@ -21,6 +21,21 @@ pre {
     padding: 0 1rem;
 }
 
+.Pub-Hide {
+    min-height: 2.75rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.Pub-Hidden {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
 .ListItem {
     margin-right: 1rem;
 }
@@ -95,4 +110,17 @@ pre {
     text-decoration: underline;
     transform: scale(1.1);
     transition: transform 0.5s;
+}
+
+#show, #content {
+    display:none;
+}
+
+#show:checked~#content {
+    display:block;
+}
+
+#icon {
+    height: 33px;
+    padding-right: 5px;
 }
