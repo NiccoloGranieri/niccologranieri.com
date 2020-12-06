@@ -6,11 +6,16 @@ body {
 }
 
 pre {
-    white-space: pre-wrap;       /* css-3 */
-    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-    white-space: -pre-wrap;      /* Opera 4-6 */
-    white-space: -o-pre-wrap;    /* Opera 7 */
-    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    overflow-x: auto;
+}
+
+p {
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+details {
+    margin: 5px;
 }
 
 .Menu-Bar {
@@ -45,7 +50,6 @@ pre {
 }
 
 .downloads {
-    min-height: 2.75rem;
     display: flex;
 }
 
@@ -110,17 +114,4 @@ pre {
     text-decoration: underline;
     transform: scale(1.1);
     transition: transform 0.5s;
-}
-
-#show, #content {
-    display:none;
-}
-
-#show:checked~#content {
-    display:block;
-}
-
-#icon {
-    height: 33px;
-    padding-right: 5px;
 }
