@@ -21,6 +21,7 @@ details {
 .Menu-Bar {
     min-height: 2.75rem;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     padding: 0 1rem;
@@ -38,8 +39,6 @@ details {
     display: flex;
     flex-direction: column;
 }
-
-
 
 .ListItem {
     margin-right: 1rem;
@@ -114,4 +113,16 @@ details {
     text-decoration: underline;
     transform: scale(1.1);
     transition: transform 0.5s;
+}
+
+@media screen and (max-width: 800px) {
+    .Menu-Bar {
+        min-height: 2.75rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 1rem;
+        display: none;
+    }
+
 }
