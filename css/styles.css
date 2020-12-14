@@ -118,11 +118,18 @@ details {
 @media screen and (max-width: 800px) {
     .Menu-Bar {
         min-height: 2.75rem;
+        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 0 1rem;
-        display: none;
+        padding: 0 1rem;   
     }
 
+    .ListItem {
+        margin-right: 0rem;
+    }
+    
+    .LastItem {
+        margin-left: 0rem;
+    }
 }
