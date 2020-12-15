@@ -132,4 +132,8 @@ details {
     .LastItem {
         margin-left: 0rem;
     }
+
+    .lang-choice {
+        font-size: 26pt;
+    }
 }
