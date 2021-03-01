@@ -2,6 +2,7 @@ body {
     margin: 0px;
     padding: 20px 10vw;
     font-family: 'Roboto', sans-serif;
+    font-size: 14pt;
     color: #52576F;
 }
 
@@ -55,6 +56,14 @@ details {
 .main-bio{
     display: flex;
     flex-direction: column;
+    padding: 1rem;
+    line-height: 1.6;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    line-height: 1.6;
     padding: 1rem;
 }
 
