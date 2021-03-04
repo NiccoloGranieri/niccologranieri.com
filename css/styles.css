@@ -13,6 +13,7 @@ pre {
 p {
     margin-top: 0px;
     margin-bottom: 5px;
+    line-height: 28pt;
 }
 
 details {
@@ -42,7 +43,7 @@ details {
 }
 
 .ListItem {
-    margin-right: 1rem;
+    margin-right: 3rem;
 }
 
 .LastItem {
