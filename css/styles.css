@@ -67,11 +67,57 @@ details {
     padding: 1rem;
 }
 
+/* PUBLICATIONS SECTION */
+
 .publications{
     display: flex;
     flex-direction: column;
     padding: 1rem;
 }
+
+.tag-phd{
+    text-transform: uppercase;
+    font-size: 11pt;
+    color: red;
+}
+
+.tag-chapter{
+    text-transform: uppercase;
+    font-size: 11pt;
+    color: green;
+}
+
+.tag-poster{
+    text-transform: uppercase;
+    font-size: 11pt;
+    color: blue;
+}
+
+.tag-demo{
+    text-transform: uppercase;
+    font-size: 11pt;
+    color: brown;
+}
+
+.tag-workshop{
+    text-transform: uppercase;
+    font-size: 11pt;
+    color: orange;
+}
+
+.tag-article{
+    text-transform: uppercase;
+    font-size: 11pt;
+    color: magenta;
+}
+
+.tag-performance{
+    text-transform: uppercase;
+    font-size: 11pt;
+    color: plum;
+}
+
+/* --------------------- */
 
 .lang-choice {
     background-color: white;
