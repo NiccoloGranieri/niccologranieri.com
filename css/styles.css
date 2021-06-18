@@ -54,11 +54,16 @@ details {
     display: flex;
 }
 
-.main-bio{
+.text-page{
     display: flex;
     flex-direction: column;
     padding: 1rem;
     line-height: 1.6;
+}
+
+hr {
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 .footer{
@@ -153,6 +158,10 @@ details {
 
 #BibTex-Code {
     margin-left: 0.5rem;
+}
+
+#elegant-hyperlink { 
+    color: #52576F;
 }
 
 #elegant-link { 
