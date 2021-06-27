@@ -213,7 +213,7 @@ img {
     transition: transform 0.5s;
 }
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 980px) {
     .Menu-Bar {
         min-height: 2.75rem;
         display: flex;
