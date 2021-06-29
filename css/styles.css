@@ -193,21 +193,21 @@ img {
     margin-left: 0.5rem;
 }
 
-#elegant-hyperlink { 
+.elegant-hyperlink { 
     color: #52576F;
 }
 
-#elegant-link { 
+.elegant-link { 
     color: #52576F;
     text-decoration: none;
     transition: transform 0.5s;
 }
 
-#elegant-link:visited {
+.elegant-link:visited {
     text-decoration: none;
 }
 
-#elegant-link:hover {
+.elegant-link:hover {
     text-decoration: underline;
     transform: scale(1.1);
     transition: transform 0.5s;
