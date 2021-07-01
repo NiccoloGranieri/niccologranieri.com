@@ -239,4 +239,12 @@ hr {
     .body-text {
         font-size: 24pt;
     }
+
+    .grid-of-pics {
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+        max-width: 900px;
+      }
 }
