@@ -241,10 +241,10 @@ hr {
     }
 
     .grid-of-pics {
+        display: flex;
+        flex-direction: column;
         text-align: center;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 1rem;
-        max-width: 900px;
+        align-items: center; important!
+        max-width: 68%;
       }
 }
