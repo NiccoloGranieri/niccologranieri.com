@@ -224,13 +224,13 @@ hr {
         padding: 0 1rem;   
     }
 
-    .ListItem {
+    /* .ListItem {
         margin-right: 0rem;
     }
     
     .LastItem {
         margin-left: 0rem;
-    }
+    } */
 
     .lang-choice {
         font-size: 26pt;
@@ -247,4 +247,154 @@ hr {
         align-items: center; important!
         max-width: 68%;
       }
-}
+} 
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MENU BAR CODE header */
+  
+  .header {
+    /* background-color: #fff;
+    position: fixed;
+    border: 1px solid  #000000
+    width: 100%;
+    z-index: 3; */
+    min-height: 2.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    padding: 0 1rem; 
+  }
+  
+  .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
+  }
+  
+  .header li a {
+    display: flex;
+    padding: 20px 0px;
+    border-right: 1px solid #fff;
+    text-decoration: none;
+  }
+  
+  /* .header li a:hover,
+  .header .menu-btn:hover {
+    background-color: #f4f4f4;
+  } */
+  
+  /* menu */
+  
+  .header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+  
+  /* menu icon */
+  
+  .header .menu-icon {
+    cursor: pointer;
+    float: right;
+    padding: 28px 0px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .header .menu-icon .nav-icon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+  
+  .header .menu-icon .nav-icon:before,
+  .header .menu-icon .nav-icon:after {
+    background: #000;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .header .menu-icon .nav-icon:before {
+    top: 5px;
+  }
+  
+  .header .menu-icon .nav-icon:after {
+    top: -5px;
+  }
+  
+  /* Menu Burger Button */
+  
+  .header .menu-btn {
+    display: none;
+  }
+  
+  .header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .nav-icon {
+    background: transparent;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .nav-icon:before {
+    transform: rotate(-45deg);
+    top:0;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .nav-icon:after {
+    transform: rotate(45deg);
+    top:0;
+  }
+
+@media (min-width: 88em) {
+    .header ul {
+        display: flex;
+    }
+
+    .menu li:last-of-type {
+        margin-left: auto;
+    }
+
+    .header li {
+      /* float: left; */
+      /* padding: 0px;
+      border: 0px;
+      margin: 0px; */
+    }
+    /* .header li a {
+      padding: 20px 30px;
+    } */
+    .header .menu {
+      /* clear: none; */
+      /* float: right; */
+      max-height: none;
+    }
+    .header .menu-icon {
+      display: none;
+    }
+  }
