@@ -209,9 +209,7 @@ hr {
 }
 
 .elegant-link:hover {
-    text-decoration: underline;
-    transform: scale(1.1);
-    transition: transform 0.5s;
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 980px) {
@@ -396,5 +394,11 @@ hr {
     }
     .header .menu-icon {
       display: none;
+    }
+
+    .elegant-link:hover {
+      text-decoration: underline;
+      transform: scale(1.1);
+      transition: transform 0.5s;
     }
   }
