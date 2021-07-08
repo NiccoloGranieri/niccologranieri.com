@@ -372,8 +372,16 @@ hr {
   }
 
 @media (min-width: 88em) {
+    .header ul {
+        display: flex;
+    }
+
+    .menu li:last-of-type {
+        margin-left: auto;
+    }
+
     .header li {
-      float: left;
+      /* float: left; */
       /* padding: 0px;
       border: 0px;
       margin: 0px; */
