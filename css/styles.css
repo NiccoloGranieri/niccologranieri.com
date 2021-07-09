@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /* SITE WIDE */
 
 body {
@@ -15,8 +22,13 @@ p {
 }
 
 .text-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 1rem;
   line-height: 1.6;
 }
@@ -27,10 +39,12 @@ hr {
 }
 
 .grid-of-social-icons {
+  display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   text-align: center;
-  align-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 #homepage {
@@ -47,9 +61,15 @@ footer {
   font-family: "Roboto", sans-serif;
   font-size: 26pt;
   color: #52576f;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .missing-page {
@@ -58,10 +78,19 @@ footer {
   font-family: "Roboto", sans-serif;
   font-size: 18pt;
   color: #52576f;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .elegant-hyperlink {
@@ -71,7 +100,11 @@ footer {
 .elegant-link {
   color: #52576f;
   text-decoration: none;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  -o-transition: transform 0.5s;
   transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 .elegant-link:visited {
@@ -99,19 +132,33 @@ footer {
 /* PROJECTS SECITON */
 
 .project-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 1rem;
   line-height: 1.6;
 }
 
 .grid-of-pics {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .pics-in-grid {
@@ -130,17 +177,29 @@ details {
 }
 
 .downloads {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .Pub-Hidden {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .publications {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 1rem;
 }
 
@@ -199,21 +258,38 @@ details {
 }
 
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* MENU BAR CODE */
 
 .header {
   min-height: 2.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: left;
-  justify-content: left;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   padding: 0 1rem;
-  flex: auto;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
 }
 
 .header ul {
@@ -236,6 +312,8 @@ header {
 .header .menu {
   clear: both;
   max-height: 0;
+  -webkit-transition: max-height 0.2s ease-out;
+  -o-transition: max-height 0.2s ease-out;
   transition: max-height 0.2s ease-out;
 }
 
@@ -246,7 +324,10 @@ header {
   float: right;
   padding: 28px 0px;
   position: relative;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .header .menu-icon .nav-icon {
@@ -254,6 +335,8 @@ header {
   display: block;
   height: 2px;
   position: relative;
+  -webkit-transition: background 0.2s ease-out;
+  -o-transition: background 0.2s ease-out;
   transition: background 0.2s ease-out;
   width: 18px;
 }
@@ -265,6 +348,8 @@ header {
   display: block;
   height: 100%;
   position: absolute;
+  -webkit-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
   width: 100%;
 }
@@ -292,12 +377,16 @@ header {
 }
 
 .header .menu-btn:checked ~ .menu-icon .nav-icon:before {
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
   top: 0;
 }
 
 .header .menu-btn:checked ~ .menu-icon .nav-icon:after {
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
   top: 0;
 }
 
@@ -309,8 +398,13 @@ header {
   }
 
   .header .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     text-align: left;
     max-height: none;
   }
@@ -320,8 +414,14 @@ header {
 
   .elegant-link:hover {
     text-decoration: underline;
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    -o-transition: transform 0.5s;
     transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
   }
 
   .lang-choice {
@@ -334,6 +434,7 @@ header {
 
   .grid-of-pics {
     text-align: center;
+    display: -ms-grid;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
