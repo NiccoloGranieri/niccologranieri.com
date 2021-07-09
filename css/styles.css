@@ -1,88 +1,338 @@
-body {
-    margin: 0px;
-    padding: 20px 10vw;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14pt;
-    color: #52576F;
-}
+/* SITE WIDE */
 
-pre {
-    overflow-x: auto;
+body {
+  margin: 0px;
+  padding: 20px 10vw;
+  font-family: "Roboto", sans-serif;
+  font-size: 14pt;
+  color: #52576f;
 }
 
 p {
-    margin-top: 0px;
-    margin-bottom: 5px;
-    line-height: 28pt;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  line-height: 28pt;
 }
 
-details {
-    margin: 5px;
-}
-
-.Menu-Bar {
-    min-height: 2.75rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 0 1rem;
-}
-
-.Pub-Hide {
-    min-height: 2.75rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.Pub-Hidden {
-    display: flex;
-    flex-direction: column;
-}
-
-.ListItem {
-    margin-right: 3rem;
-}
-
-.LastItem {
-    margin-left: auto;
-}
-
-.downloads {
-    display: flex;
-}
-
-.text-page{
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    line-height: 1.6;
-}
-
-.project-page{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    padding: 1rem;
-    line-height: 1.6;
+.text-page {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  line-height: 1.6;
 }
 
 hr {
-    margin-left: 0px;
-    margin-right: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
-.footer{
-    display: flex;
-    flex-direction: row;
-    line-height: 1.6;
-    padding: 1rem;
+.grid-of-social-icons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  text-align: center;
+  align-content: center;
+}
+
+#homepage {
+  padding: 100px;
+}
+
+footer {
+  padding: 1rem;
+}
+
+.lang-choice {
+  background-color: white;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  font-size: 26pt;
+  color: #52576f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.missing-page {
+  background-color: white;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  font-size: 18pt;
+  color: #52576f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.elegant-hyperlink {
+  color: #52576f;
+}
+
+.elegant-link {
+  color: #52576f;
+  text-decoration: none;
+  transition: transform 0.5s;
+}
+
+.elegant-link:visited {
+  text-decoration: none;
+}
+
+.elegant-link:hover {
+  text-decoration: underline;
+}
+
+.body-text {
+  font-size: 24pt;
+}
+
+/* NAV BAR */
+
+.ListItem {
+  margin-right: 3rem;
+}
+
+.lang-btn {
+  padding: 0 1rem;
+}
+
+/* PROJECTS SECITON */
+
+.project-page {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 1rem;
+  line-height: 1.6;
 }
 
 .grid-of-pics {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.pics-in-grid {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* PUBLICATIONS SECTION */
+
+pre {
+  overflow-x: auto;
+}
+
+details {
+  margin: 5px;
+}
+
+.downloads {
+  display: flex;
+}
+
+.Pub-Hidden {
+  display: flex;
+  flex-direction: column;
+}
+
+.publications {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.tag-phd {
+  text-transform: uppercase;
+  font-size: 11pt;
+  color: red;
+}
+
+.tag-chapter {
+  text-transform: uppercase;
+  font-size: 11pt;
+  color: green;
+}
+
+.tag-poster {
+  text-transform: uppercase;
+  font-size: 11pt;
+  color: blue;
+}
+
+.tag-demo {
+  text-transform: uppercase;
+  font-size: 11pt;
+  color: brown;
+}
+
+.tag-workshop {
+  text-transform: uppercase;
+  font-size: 11pt;
+  color: orange;
+}
+
+.tag-article {
+  text-transform: uppercase;
+  font-size: 11pt;
+  color: magenta;
+}
+
+.tag-performance {
+  text-transform: uppercase;
+  font-size: 11pt;
+  color: plum;
+}
+
+.BibTex-Box {
+  background-color: #fafafa;
+  border-color: darkgray;
+  border-radius: 1px;
+  border-width: 0.01cm;
+  border-style: solid;
+}
+
+#BibTex-Code {
+  margin-left: 0.5rem;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* MENU BAR CODE */
+
+.header {
+  min-height: 2.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  padding: 0 1rem;
+  flex: auto;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 0px;
+  border-right: 1px solid #fff;
+  text-decoration: none;
+}
+
+/* MENU */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+/* BURGER ICON */
+
+.header .menu-icon {
+  cursor: pointer;
+  float: right;
+  padding: 28px 0px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .nav-icon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .nav-icon:before,
+.header .menu-icon .nav-icon:after {
+  background: #000;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .nav-icon:before {
+  top: 5px;
+}
+
+.header .menu-icon .nav-icon:after {
+  top: -5px;
+}
+
+/* MENU BURGER BUTTON */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+/* DESKTOP / LAPTOP SCREENS */
+
+@media (min-width: 88em) {
+  .header {
+    display: block;
+  }
+
+  .header .menu {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+
+  .elegant-link:hover {
+    text-decoration: underline;
+    transform: scale(1.1);
+    transition: transform 0.5s;
+  }
+
+  .lang-choice {
+    font-size: 18pt;
+  }
+
+  .body-text {
+    font-size: 14pt;
+  }
+
+  .grid-of-pics {
     text-align: center;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -90,315 +340,7 @@ hr {
     max-width: 100%;
   }
 
-.pics-in-grid {
-    max-width: 100%;
-    max-height: 100%;
-    /* border: 1px solid #52576F; */
-}
-
-.grid-of-social-icons {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    text-align: center;
-    align-content: center;
+  .lang-btn {
+    padding: 0 1rem;
   }
-
-.body-text {
-    font-size: 14pt;
 }
-
-/* PUBLICATIONS SECTION */
-
-.publications{
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-}
-
-.tag-phd{
-    text-transform: uppercase;
-    font-size: 11pt;
-    color: red;
-}
-
-.tag-chapter{
-    text-transform: uppercase;
-    font-size: 11pt;
-    color: green;
-}
-
-.tag-poster{
-    text-transform: uppercase;
-    font-size: 11pt;
-    color: blue;
-}
-
-.tag-demo{
-    text-transform: uppercase;
-    font-size: 11pt;
-    color: brown;
-}
-
-.tag-workshop{
-    text-transform: uppercase;
-    font-size: 11pt;
-    color: orange;
-}
-
-.tag-article{
-    text-transform: uppercase;
-    font-size: 11pt;
-    color: magenta;
-}
-
-.tag-performance{
-    text-transform: uppercase;
-    font-size: 11pt;
-    color: plum;
-}
-
-/* --------------------- */
-
-.lang-choice {
-    background-color: white;
-    height: 100vh;
-    font-family: 'Roboto', sans-serif;
-    font-size: 18pt;
-    color: #52576F;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.missing-page {
-    background-color: white;
-    height: 100vh;
-    font-family: 'Roboto', sans-serif;
-    font-size: 18pt;
-    color: #52576F;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.BibTex-Box {
-    background-color: #fafafa;
-    border-color: darkgray;
-    border-radius: 1px;
-    border-width: 0.01cm;
-    border-style: solid;
-}
-
-#BibTex-Code {
-    margin-left: 0.5rem;
-}
-
-.elegant-hyperlink { 
-    color: #52576F;
-}
-
-.elegant-link { 
-    color: #52576F;
-    text-decoration: none;
-    transition: transform 0.5s;
-}
-
-.elegant-link:visited {
-    text-decoration: none;
-}
-
-.elegant-link:hover {
-  text-decoration: underline;
-}
-
-@media screen and (max-width: 980px) {
-    .Menu-Bar {
-        min-height: 2.75rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 0 1rem;   
-    }
-
-    /* .ListItem {
-        margin-right: 0rem;
-    }
-    
-    .LastItem {
-        margin-left: 0rem;
-    } */
-
-    .lang-choice {
-        font-size: 26pt;
-    }
-
-    .body-text {
-        font-size: 24pt;
-    }
-
-    .grid-of-pics {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center; important!
-        max-width: 68%;
-      }
-} 
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* MENU BAR CODE header */
-  
-  .header {
-    /* background-color: #fff;
-    position: fixed;
-    border: 1px solid  #000000
-    width: 100%;
-    z-index: 3; */
-    min-height: 2.75rem;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: left;
-    padding: 0 1rem; 
-  }
-  
-  .header ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    overflow: hidden;
-    background-color: #fff;
-  }
-  
-  .header li a {
-    display: flex;
-    padding: 20px 0px;
-    border-right: 1px solid #fff;
-    text-decoration: none;
-  }
-  
-  /* .header li a:hover,
-  .header .menu-btn:hover {
-    background-color: #f4f4f4;
-  } */
-  
-  /* menu */
-  
-  .header .menu {
-    clear: both;
-    max-height: 0;
-    transition: max-height .2s ease-out;
-  }
-  
-  /* menu icon */
-  
-  .header .menu-icon {
-    cursor: pointer;
-    float: right;
-    padding: 28px 0px;
-    position: relative;
-    user-select: none;
-  }
-  
-  .header .menu-icon .nav-icon {
-    background: #333;
-    display: block;
-    height: 2px;
-    position: relative;
-    transition: background .2s ease-out;
-    width: 18px;
-  }
-  
-  .header .menu-icon .nav-icon:before,
-  .header .menu-icon .nav-icon:after {
-    background: #000;
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
-    width: 100%;
-  }
-  
-  .header .menu-icon .nav-icon:before {
-    top: 5px;
-  }
-  
-  .header .menu-icon .nav-icon:after {
-    top: -5px;
-  }
-  
-  /* Menu Burger Button */
-  
-  .header .menu-btn {
-    display: none;
-  }
-  
-  .header .menu-btn:checked ~ .menu {
-    max-height: 240px;
-  }
-  
-  .header .menu-btn:checked ~ .menu-icon .nav-icon {
-    background: transparent;
-  }
-  
-  .header .menu-btn:checked ~ .menu-icon .nav-icon:before {
-    transform: rotate(-45deg);
-    top:0;
-  }
-  
-  .header .menu-btn:checked ~ .menu-icon .nav-icon:after {
-    transform: rotate(45deg);
-    top:0;
-  }
-
-@media (min-width: 88em) {
-    .header ul {
-        display: flex;
-    }
-
-    .menu li:last-of-type {
-        margin-left: auto;
-    }
-
-    .header li {
-      /* float: left; */
-      /* padding: 0px;
-      border: 0px;
-      margin: 0px; */
-    }
-    /* .header li a {
-      padding: 20px 30px;
-    } */
-    .header .menu {
-      /* clear: none; */
-      /* float: right; */
-      max-height: none;
-    }
-    .header .menu-icon {
-      display: none;
-    }
-
-    .elegant-link:hover {
-      text-decoration: underline;
-      transform: scale(1.1);
-      transition: transform 0.5s;
-    }
-  }
