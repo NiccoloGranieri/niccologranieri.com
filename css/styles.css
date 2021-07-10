@@ -21,6 +21,18 @@ p {
   line-height: 28pt;
 }
 
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .text-page {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -257,18 +269,6 @@ details {
   margin-left: 0.5rem;
 }
 
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 /* MENU BAR CODE */
 
 .header {
@@ -369,7 +369,7 @@ header {
 }
 
 .header .menu-btn:checked ~ .menu {
-  max-height: 240px;
+  max-height: 500px;
 }
 
 .header .menu-btn:checked ~ .menu-icon .nav-icon {
