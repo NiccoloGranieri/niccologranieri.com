@@ -28,9 +28,10 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
+  padding-top: 28px;
 }
 
 .text-page {
@@ -322,7 +323,7 @@ details {
 .header .menu-icon {
   cursor: pointer;
   float: right;
-  padding: 28px 0px;
+  padding: 10px 0px;
   position: relative;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -393,6 +394,12 @@ details {
 /* DESKTOP / LAPTOP SCREENS */
 
 @media (min-width: 88em) {
+  header {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+
   .header {
     display: block;
   }
@@ -408,6 +415,7 @@ details {
     text-align: left;
     max-height: none;
   }
+  
   .header .menu-icon {
     display: none;
   }
