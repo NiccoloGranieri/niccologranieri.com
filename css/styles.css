@@ -47,6 +47,7 @@ header {
 
 .top {
   margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .text-page {
@@ -79,10 +80,6 @@ hr {
 
 #homepage {
   padding: 100px;
-}
-
-footer {
-  padding: 1rem;
 }
 
 .lang-choice {
