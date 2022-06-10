@@ -246,6 +246,12 @@ details {
   color: green;
 }
 
+.tag-conference-paper {
+  text-transform: uppercase;
+  font-size: 11pt;
+  color: cornflowerblue;
+}
+
 .tag-poster {
   text-transform: uppercase;
   font-size: 11pt;
