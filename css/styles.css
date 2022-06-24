@@ -11,7 +11,7 @@ body {
   margin: 0px; 
   padding: 20px 10vw;
   font-family: "Roboto", sans-serif;
-  font-size: 25pt;
+  font-size: 14pt;
   color: #52576f;
 }
 
@@ -29,7 +29,6 @@ body.index .wrapper {
 p {
   margin-top: 0px;
   margin-bottom: 11px;
-  line-height: 50pt;
 }
 
 header {
@@ -147,7 +146,7 @@ hr {
 }
 
 .body-text {
-  font-size: 24pt;
+  font-size: 14pt;
 }
 
 /* NAV BAR */
@@ -420,7 +419,6 @@ details {
 
 @media (min-width: 88em) {
   body {
-    font-size: 14pt;
   }
   
   body.index {
