@@ -15,13 +15,13 @@ body {
   color: #52576f;
 }
 
-body.home {
+body.index {
   height: 100%;
   overflow: hidden;
   margin: -165px 0px; /* Very jank but makes the index language choice look centered on mobile */
 }
   
-body.home .wrapper {
+body.index .wrapper {
   display: flex;
   flex-direction: column;
 }
@@ -422,8 +422,8 @@ details {
   body {
     font-size: 14pt;
   }
-
-  body.home {
+  
+  body.index {
     margin: 0px;
   }
 
