@@ -234,51 +234,40 @@ details {
   padding: 1rem;
 }
 
-.tag-phd {
+.publication-tag {
   text-transform: uppercase;
   font-size: 11pt;
+}
+
+.type-phd {
   color: red;
 }
 
-.tag-chapter {
-  text-transform: uppercase;
-  font-size: 11pt;
+.type-chapter {
   color: green;
 }
 
-.tag-conference-paper {
-  text-transform: uppercase;
-  font-size: 11pt;
+.type-conference-paper {
   color: cornflowerblue;
 }
 
-.tag-poster {
-  text-transform: uppercase;
-  font-size: 11pt;
+.type-poster {
   color: blue;
 }
 
-.tag-demo {
-  text-transform: uppercase;
-  font-size: 11pt;
+.type-demo {
   color: brown;
 }
 
-.tag-workshop {
-  text-transform: uppercase;
-  font-size: 11pt;
+.type-workshop {
   color: orange;
 }
 
-.tag-article {
-  text-transform: uppercase;
-  font-size: 11pt;
+.type-article {
   color: magenta;
 }
 
-.tag-performance {
-  text-transform: uppercase;
-  font-size: 11pt;
+.type-performance {
   color: plum;
 }
 
