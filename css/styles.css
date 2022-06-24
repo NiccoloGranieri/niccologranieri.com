@@ -89,7 +89,7 @@ hr {
   background-color: white;
   height: 100vh;
   font-family: "Roboto", sans-serif;
-  font-size: 26pt;
+  font-size: 18pt;
   color: #52576f;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -483,10 +483,6 @@ details {
     -o-transition: transform 0.5s;
     transition: transform 0.5s;
     transition: transform 0.5s, -webkit-transform 0.5s;
-  }
-
-  .lang-choice {
-    font-size: 18pt;
   }
 
   .body-text {
