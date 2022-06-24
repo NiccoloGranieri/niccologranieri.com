@@ -415,6 +415,14 @@ details {
   top: 0;
 }
 
+.copyright {
+  position: sticky;
+  top: 100%;
+  text-align: center;
+  font-size: 10pt;
+  color: #52576f70;
+}
+
 /* DESKTOP / LAPTOP SCREENS */
 
 @media (min-width: 88em) {
