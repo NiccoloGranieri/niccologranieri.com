@@ -65,6 +65,7 @@ footer {
   padding: 1rem;
   line-height: 1.6;
   text-align: justify;
+  min-height: 80vh; /* Jank solution to get the footer at the bottom of the page on empty pages */
 }
 
 hr {
@@ -416,8 +417,6 @@ details {
 }
 
 .copyright {
-  position: sticky;
-  top: 100%;
   text-align: center;
   font-size: 10pt;
   color: #52576f70;
@@ -426,9 +425,6 @@ details {
 /* DESKTOP / LAPTOP SCREENS */
 
 @media (min-width: 88em) {
-  body {
-  }
-  
   body.index {
     margin: 0px;
   }
