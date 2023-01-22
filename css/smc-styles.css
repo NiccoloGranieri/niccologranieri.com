@@ -22,7 +22,7 @@
   text-align: center;
   -ms-flex-line-pack: center;
   align-content: center;
-  max-width: 50%!important;
+  max-width: 100%!important;
 }
 
 .smc-img {
@@ -42,4 +42,16 @@
       -ms-flex-pack: center;
           justify-content: center;
   min-height: 80vh;
+}
+
+@media (min-width: 58em) {
+  .gridWrap {
+    max-width: 65%!important;
+  }
+}
+
+@media (min-width: 88em) {
+  .gridWrap {
+    max-width: 55%!important;
+  }
 }
