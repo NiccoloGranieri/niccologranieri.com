@@ -49,4 +49,17 @@
   .gridWrap {
     max-width: 55%!important;
   }
+
+  .smc-img:hover {
+    transform: scale(5);
+    pointer-events: none;
+    transform: translateX(1000px);
+  }
 }
+
+.smc-img:hover {
+  transform: scale(5);
+  pointer-events: none;
+}
+
+
