@@ -31,6 +31,12 @@
   width: 100%;
 }
 
+.smc-img:hover {
+  transform: scale(5);
+  pointer-events: none;
+}
+
+
 .centered-main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -56,10 +62,4 @@
     transform: translateX(1000px);
   }
 }
-
-.smc-img:hover {
-  transform: scale(5);
-  pointer-events: none;
-}
-
 
