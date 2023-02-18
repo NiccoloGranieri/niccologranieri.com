@@ -59,7 +59,7 @@
   .smc-img:hover {
     transform: scale(5);
     pointer-events: none;
-    transform: translateX(1000px);
+    /* transform: translateX(100px); */
   }
 }
 
