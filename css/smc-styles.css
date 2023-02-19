@@ -18,7 +18,7 @@
 .gridWrap {
   display: -ms-grid;
   display: grid;
-  grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+  grid-template-columns: 11.11% 11.11% 11.11% 11.11% 11.11% 11.11% 11.11% 11.11% 11.11%;
   text-align: center;
   -ms-flex-line-pack: center;
   align-content: center;
