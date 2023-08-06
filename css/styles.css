@@ -81,6 +81,10 @@ hr {
       align-content: center;
 }
 
+.social-icon {
+  max-width: 50%;
+}
+
 #homepage {
   padding-top: 100px;
   padding-right: 0px;
@@ -680,5 +684,9 @@ iframe[src*="player.vimeo.com"]{
 
   .hideable-on-resize {
     display: contents;
+  }
+
+  .social-icon {
+    max-width: 25%;
   }
 }
