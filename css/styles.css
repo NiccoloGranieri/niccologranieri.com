@@ -96,7 +96,7 @@ hr {
   background-color: white;
   height: 100vh;
   font-family: "Roboto", sans-serif;
-  font-size: 18pt;
+  font-size: 38pt;
   color: #52576f;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -593,6 +593,10 @@ iframe[src*="player.vimeo.com"]{
 /* DESKTOP / LAPTOP SCREENS */
 
 @media (min-width: 88em) {
+  .lang-choice {
+    font-size: 18pt;
+  }
+
   body {
     font-size: 14pt;
   }
