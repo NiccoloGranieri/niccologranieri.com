@@ -11,7 +11,7 @@ body {
   margin: 0px; 
   padding: 20px 10vw;
   font-family: "Roboto", sans-serif;
-  font-size: 14pt;
+  font-size: 34pt;
   color: #52576f;
 }
 
@@ -589,6 +589,10 @@ iframe[src*="player.vimeo.com"]{
 /* DESKTOP / LAPTOP SCREENS */
 
 @media (min-width: 88em) {
+  body {
+    font-size: 14pt;
+  }
+
   body.index {
     margin: 0px;
   }
