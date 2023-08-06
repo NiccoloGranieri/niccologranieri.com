@@ -445,7 +445,7 @@ details {
 }
 
 .header .menu-btn:checked ~ .menu {
-  max-height: 500px;
+  max-height: 550px;
 }
 
 .header .menu-btn:checked ~ .menu-icon .nav-icon {
