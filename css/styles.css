@@ -31,6 +31,12 @@ p {
   margin-bottom: 11px;
 }
 
+code {
+  font-family: "Roboto Mono", monospace;
+  font-size: 12pt;
+  color: #52576f;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;

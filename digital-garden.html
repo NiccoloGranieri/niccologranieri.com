@@ -37,6 +37,56 @@
                 English. If I feel the need for it later, I will put filters so that they can be sorted by language.
             </p>
             <hr>
+            <p style="opacity: 45%; font-size: 75%;">Thursday, 4<sup>th</sup> January 2024</p>
+            <h2 class="top" style="margin-top: 0px !important">Flippin' subtitles, dude!</h1>
+            <p>
+                I was asked to do a brief translation work for a family member. The original request was: "You speak english,
+                right? Could you please watch this <i>entire DVD</i> and summarise it for me please?". Of course, I wasn't going to
+                do that, so I said "Don't worry, I'll make sure you can watch the DVD with Italian subs". They were happy, I thought
+                I could have leveraged YouTube for the automatic subs and DeepL for some quick translation, and with a bit
+                of proof reading I would be done in no time. Turns out I was wrong.
+            </p>
+            <h4 class="top" style="margin-top: 0px !important">DeepL doesn't like timestamps</h1>
+            <p>
+                Feeding the raw .sbv file downloaded from YouTube yielded decent results on tiny videos (< 1 min) but
+                started becoming problematic with longer vidoes. DeepL wasn't able to grasp the context of what was
+                being said, because every sentence was interrupted by timestamps. I quickly realised that it would
+                have taken a huge amount of time to manually correct all the mistakes, and thus this ideas was scrapped.
+            </p>
+            <h4 class="top" style="margin-top: 0px !important">YouTube's auto-translated subtitles</h1>
+            <p>
+                Even though I am confident in DeepL's translation capabilities, I decided to give YouTube's auto-translated
+                subs a go. But here's the catch: as of today, it's not that easy to get a hold of them. Using 
+                <a href="https://github.com/yt-dlp/yt-dlp">yt-dlp</a>'s subtitle download feature seemed to work fine, but at
+                a closer inspection, the donwloaded subs were a mess. Final Cut Pro wasn't able to import them (I tried every
+                possible format), and even trying to re-upload them to YouTube yielded several errors. While YouTube's
+                auto-generated subtitles were extremely clean when downloaded from YouTube, they became a garbled mess when 
+                downloaded via yt-dlp. I thought it was an auto-translation issue, but even the native ones suffered from the
+                same issue.
+            </p>
+            <h4 class="top" style="margin-top: 0px !important">The working workflow</h1>
+            <p>    
+                As of today, January 2024, it seems to be possible to download auto-translated subtitles from YouTube only if
+                captions have been published in the original video language first. In YouTube's own words: "Auto-translate is
+                unavailable for auto-generated captions". However, in italian we say <i>"Fatta la legge, trovato l'inganno"</i>
+                that literally translates to <i>"Once the law is made, the trick is found"</i>, but in this case it's more of
+                a workaround. Here's the workflow:
+            </p>
+            <ol>
+                <li>Upload the video to YouTube and wait for captions to be auto-generated.</li>
+                <li>Download the auto-generated captions in the original language.</li>
+                <li>Re-upload the captions on YouTube for the "English (video language)" subtitle track.
+                    <br>(We are effectively uploading the auto-generated captions and telling YouTube these are custom captions of ours.)
+                </li>
+                <li>Create a new language subtitles track (in my case, italian)</li>
+                <li>Edit the newly created subtitles track, and select Auto-translate</li>
+            </ol>
+            <p>    
+                Doing so, you will be able to download the auto-translated subtitle track from YouTube, saving a clean .sbv file
+                that can be converted in whichever format you need. In my case, I used FFmpeg to convert the .sbv file to .srt.
+                <pre><code>ffmpeg -i input.sbv output.srt</code></pre>
+            </p>
+            <hr>
             <p style="opacity: 45%; font-size: 75%;">Monday, 7<sup>th</sup> August 2023</p>
             <h2 class="top" style="margin-top: 0px !important">If local tunnelling worked before, it should always work.</h1>
             <p>
