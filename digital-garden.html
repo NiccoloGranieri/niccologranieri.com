@@ -108,6 +108,41 @@
             <p>
                 Turns out it was a bug on Microsoft's addon, and switching did the trick. Too bad I lost a whole day on this.
             </p>
+            <hr>
+            <p style="opacity: 45%; font-size: 75%;">Wednesday, 17<sup>th</sup> May 2023</p>
+            <h2 class="top" style="margin-top: 0px !important">Zotero setup, mostly as a reminder for myself</h1>
+            <p>
+                I have recently started using Zotero together with other researchers, and thus have started using Zotero's inbuilt
+                shared libraries. This means I have to now manage multiple libraries, and it seems like a good time to document the
+                setup to remember why I did things a certain way a while back.
+            </p>
+            <h4 class="top" style="margin-top: 0px !important">Local Library</h1>
+            <p>
+                The local library is managed by Zotfile, which automatically renames and moves the files to a specific folder enabling
+                me to use iCloud rather than Zotero's own cloud storage. Every time a file is added, I simply:
+                <ul style="list-style-type: circle;">
+                    <li>Right-click on the file</li>
+                    <li>Click on "Manage Attachments"</li>
+                    <li>Click on "Rename and Move"</li>
+                </ul>
+            </p>
+            <h4 class="top" style="margin-top: 0px !important">Shared Library</h1>
+            <p>
+                For the shared library things are slightly different. Due to it being handled entirely by Zotero, I have to let
+                it handle also References and Attachments. There are two separate schenarios
+                <ol>
+                    <li>When I add a new file and reference, I simply "Add to shared library"</li>
+                    <li>When instead I want to share an existing file in the local library, I must:
+                        <ul style="list-style-type: circle;">
+                            <li>Right-click on the file</li>
+                            <li>Click on "Manage Attachments"</li>
+                            <li>Click on "Convert linked files to stored files"</li>
+                        </ul>
+                    </li>
+                </ol>
+                In case of an existing file, this will store the data using Zotero's storage, and it can then be moved to the chosen group library,
+                and deleted from the local library to avoid duplication.
+            </p>
         </main>
         <footer>
             <p class="copyright">© 2024 Niccolò Granieri</p>
