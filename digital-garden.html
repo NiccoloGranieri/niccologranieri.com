@@ -37,6 +37,61 @@
                 English. If I feel the need for it later, I will put filters so that they can be sorted by language.
             </p>
             <hr>
+            <p style="opacity: 45%; font-size: 75%;">Sabato, 24 Agosto 2024</p>
+            <h2 class="top" style="margin-top: 0px !important">Spoiler Alert: la configurazione di Vodafone NON era stabile.</h2>
+            <p>
+                Dopo aver settato la Vodafone station in cascata con l'UDR, e aver disattivato il Wi-Fi sulla Vodafone Station, sembrava che il tutto
+                funzionasse alla grande (come avevo scritto nel precedente post). Purtroppo, dopo un paio di giorni, ho notato che la connessione
+                internet era molto instabile. L'UDR continuava a notificarmi ad intervalli più o meno regolari che a causa della latenza altissima,
+                il servizio internet risultava non essere disponibile. Questa cosa succedeva più volte al giorno, e dopo esser diventata una situazione 
+                pressochè insostenibile, ho iniziato a fare delle indagini che hanno subito portato alla luce il problema.
+            </p>
+            <h4 class="top" style="margin-top: 0px !important">Doppio NAT</h4>
+            <p>
+                Mi ci è voluto poco per capire che il problema era il doppio NAT. Anche se, in teoria, il doppio NAT non dovrebbe causare 
+                questo tipo di problemi, era chiaro che mettere il NAT statico sulla Vodafone station era la soluzione sbagliata. Dopo una 
+                breve chiacchierata con un altro tecnico Vodafone, che mi ha confermato che il NAT statico era una pessima soluzione, e ha 
+                ribadito che la Vodafone Station non può essere messa in modalità Bridge, ho deciso di cambiare modem.
+            </p>
+            <h4 class="top" style="margin-top: 0px !important">I modem vecchi non funzionano più</h4>
+            <p>
+                Tutti (spero di non essere il solo) abbiamo uno o più vecchi modem in casa, in qualche cassetto. Sappiate che molto 
+                probabilmente, non possono più essere usati. Dopo aver provato a configurare per un giorno interno uno ZyXel P-660HNU-T1 in vano,
+                ho chiamato Vodafone e sono stato informato che il modem era un modem ADSL+, e io avevo bisogno di un modem VDSL.
+            </p>
+            <h4 class="top" style="margin-top: 0px !important">Non tutti i modem moderni vanno bene</h4>
+            <p>
+                Sconfitto dalla tecnologia obsoleta, sono andato su FaceBook marketplace alla ricerca di un modem semi-nuovo che supportasse 
+                la tecnologia VDSL e che, a questo punto, supportasse a pieno anche la modalità Bridge. Incredibilmente, in meno di 10 minuti 
+                ho trovato un NETGEAR D6400 nella mia città a €15. Dopo pochi minuti, sono andato a prenderlo, e in men che non si dica il modem 
+                era configurato e funzionante. Sembravano non esserci più problemi di doppio NAT, la linea era molto più stabile, e mi ritenevo 
+                soffisfatto del mio acquisto. Non sapevo che sarebbero iniziate di li a breve 2 settimane infernali.
+            </p>
+            <p>
+                La sera stessa, sul divano, mi rendo conto che nonostante internet funzioni dappertutto, la TV aveva problemi sporadici. O meglio: 
+                si connetteva al WiFi, YouTube funzionava perfettamente, ma nessun altra applicazione sulla TV (Netflix, Prime Video, Disney+) riusciva 
+                a connettersi. Inoltre, anche lo store della mia TV non funzionava, quindi non potevo nemmeno scaricare altre app.
+            </p>
+            <p>
+                Per due settimane, ho fatto di tutto. Resettato la TV, il modem e addirittura l'UDR più volte. Cambiato i DNS di tutto, ma niente. Il problema 
+                persisteva, ed era sempre lo stesso: non riuscivo a fare niente dalla TV. Dopo due settimane di frustrazione, ho deciso di comprare il 
+                non plus ultra dei modem: DrayTek Vigor 165. Su tutti i forum era dipinto come il miglior modem in circolazione, e avendolo trovato usato a 
+                €35 su subito.it, ho deciso di procedere con l'acquisto.
+            </p>
+            <h4 class="top" style="margin-top: 0px !important">Ho risolto i problemi ma non so perché...</h4>
+            <p>
+                Una volta sostituito il NETGEAR con il DrayTek, tutti i problemi sono spariti. La linea era finalmente stabile al 100%, tutti i 
+                dispositivi si connettevano correttamente, e persino la TV funzionava. Detto ciò, non ho mai capito perchè il NETGEAR mi avesse 
+                dato questi problemi particolari. L'unica cosa che ho mai trovato, è un commento su un forum NETGEAR dove uno degli utenti sconsigliava 
+                l'utilizzo del D6400 in modalità "solo modem". Tutto qua, senza motivare la risposta.
+            </p>
+            <h4 class="top" style="margin-top: 0px !important">Quindi: come si usa un prodotto Unifi con Vodafone in Italia?</h4>
+            <p>
+                L'unico modo per utilizzare un prodotto Unifi con Vodafone in Italia se non si ha la fibra è di utilizzare un modem di terze parti 
+                facendo leva sulla possibilità di passare a modem libero, e mettendo il modem in modalità Bridge, passare tutte le funzioni di 
+                routing all'UDR tramite cavo Ethernet.
+            </p>
+            <img src="img/garden/UDR-FlowChart.jpg" alt="UDR Flow Chart" style="width: 100%; margin-bottom: 20px;">
             <p style="opacity: 45%; font-size: 75%;">Lunedì, 29 Luglio 2024</p>
             <h2 class="top" style="margin-top: 0px !important">Al SuperSoco non piace l'acqua</h2>
             <p>
