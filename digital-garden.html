@@ -37,6 +37,61 @@
                 English. If I feel the need for it later, I will put filters so that they can be sorted by language.
             </p>
             <hr>
+            <p style="opacity: 45%; font-size: 75%;">Venerdì, 2 Maggio 2025</p>
+            <h2 class="top" style="margin-top: 0px !important">GitHub Actions - SSH</h2>
+            <p>
+                Per la prima volta mi sono cimentato nella creazione di una GitHub action. Avevo bisogno che, ogniqualvolta facessi il push sul main branch,
+                mandasse via SSH (poichè ftp non è il metodo più sicuro al mondo) alcuni file di testo ad un server remoto.
+            </p>
+            <p>
+                Dopo aver sperimentato in locale con il comando scp, e aver mandato con successo alcuni file di test, ho deciso di implementare il processo 
+                usando una GitHub Action, pensando sarebbe stato semplice convertire un comando (funzionante) locale in un comando "remoto".
+            </p>
+            <h4 class="top" style="margin-top: 0px !important">Chiavi protette da passphrase</h4>
+            <p>
+                Nonostante qualche tutorial dica sia possibile, mi è risultato molto difficile (se non impossibile) utilizzare una chiave SSH protetta 
+                da passphrase tramite GH Actions. Siteground, il servizio sul quale è tutt'ora hostato il server, permetteva di creare solamente chiavi SSH 
+                protette da password. Per ovviare a questo problema, ho generato una coppia di chiavi senza password localmente, e ho caricato su SiteGround 
+                la parte pubblica della chiave.
+            </p>
+            <h4 class="top" style="margin-top: 0px !important">authorized_keys</h4>
+            <p>
+                Mi sono inoltre accorto che, per qualche motivo, il server su SiteGround non aveva nessun file chiamato <em>authorized_keys</em> ma solo <em>authorized_keys2</em>. 
+                Questo ha reso difficile per parecchio tempo la connessione SSH via GH Actions. Per ovviare al problema, una volta identificato, ho creato una copia 
+                esatta del file authorized_keys2 in un file chiamato authorized_keys utilizzando il comando seguente: <pre><code>cat authorized_keys2 >> authorized_keys</code></pre>.
+            </p>
+            <h4 class="top" style="margin-top: 0px !important">Le connessioni SSH non sono semplici</h4>
+            <p>
+                Nonostante tutti questi accorgimenti, la GH Actionc continuava a fallire. Non importava quale tutorial io seguissi, c'era sempre qualche errore nel momento della 
+                connessione. La frustrazione è giunta al termine quando mi sono imbattuto nel blog di <a href="https://zellwk.com/blog/github-actions-deploy/">Zell Liew</a>, che mi è subito
+                parso diverso da tutti gli altri tutorial letti fino a questo momento, poichè stabiliva dal principio che <em>The hardest part of this process is deploying to the server with SSH</em>. 
+                Invece di cercare di fare tutto a mano, questo tutorial utilizzava la repository di <a href="https://github.com/marketplace/actions/install-ssh-key">Shimataro</a> che rendeva l'intera connessione SSH una questione
+                di un paio di righe. File yaml finale copiato qua sotto per quelli che, come me, stanno faticando con un problema simile.
+            </p>
+            <pre><code>
+<span style="color:blue;">name</span>: DocuWiki Files to Server
+
+<span style="color:blue;">on</span>:
+    <span style="color:blue;">push</span>:
+    <span style="color:blue;">branches</span>:
+        - main
+<span style="color:blue;">jobs</span>:
+    <span style="color:blue;">deploy</span>:
+    <span style="color:blue;">runs-on</span>: ubuntu-latest
+
+    <span style="color:blue;">steps</span>:
+        - <span style="color:blue;">name</span>: checkout repo
+          <span style="color:blue;">uses</span>: actions/checkout@v4
+        - <span style="color:blue;">name</span>: Install SSH Key
+          <span style="color:blue;">uses</span>: shimataro/ssh-key-action@v2
+          <span style="color:blue;">with</span>:
+            <span style="color:blue;">key</span>: ${{ secrets.SSH_PRIVATE_KEY }}
+            <span style="color:blue;">known_hosts</span>: 'avoids errors'
+        - <span style="color:blue;">name</span>: Deploy with rsync
+          <span style="color:blue;">run</span>: |
+            ssh-keyscan -H -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
+            scp -r -P ${{ secrets.SSH_PORT }} docs ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.SSH_PATH }}</code></pre>
+            <hr>
             <p style="opacity: 45%; font-size: 75%;">Venerdì, 6 Dicembre 2024</p>
             <h2 class="top" style="margin-top: 0px !important">Nuova sella per il SuperSoco CPX</h2>
             <p>
