@@ -629,7 +629,7 @@ iframe[src*="player.vimeo.com"]{
 
 /* DESKTOP / LAPTOP SCREENS */
 
-@media (min-width: 48em) {
+@media (min-width: 62em) {
   .lang-choice {
     font-size: 18pt;
   }
