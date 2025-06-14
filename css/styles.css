@@ -20,6 +20,12 @@ body.index {
   overflow: hidden;
   margin: -165px 0px; /* Very jank but makes the index language choice look centered on mobile */
 }
+
+body.indexlinkroots {
+  height: 100%;
+  overflow-x: hidden;
+  margin: 0; /* Very jank but makes the index language choice look centered on mobile */
+}
   
 body.index .wrapper {
   display: flex;
@@ -115,7 +121,7 @@ hr {
           justify-content: center;
 }
 
-.links {
+.linkroots {
   background-color: white;
   height: 100vh;
   font-family: "Roboto", sans-serif;
@@ -215,6 +221,21 @@ hr {
 
 .body-text {
   font-size: 14pt;
+}
+
+/*
+.change-text {
+  position: relative;
+  display: inline-block;
+}
+.change-text .hover-text {
+  display: none;
+}
+.change-text:hover .default-text {
+  display: none;
+}
+.change-text:hover .hover-text {
+  display: inline;
 }
 
 /* NAV BAR */
