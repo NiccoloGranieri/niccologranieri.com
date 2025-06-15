@@ -5,7 +5,7 @@ html, body {
 }
 
 body {
-  min-height: 100svh; /* Uses the full small viewport height on mobile */
+  min-height: 100svh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,8 +13,10 @@ body {
   font-family: "Roboto", Arial, sans-serif;
   background: #fff;
   color: #222;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
 }
-
 .linkroots {
   width: 100%;
   max-width: 400px;
