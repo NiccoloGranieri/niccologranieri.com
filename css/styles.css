@@ -59,6 +59,20 @@ footer {
   margin-bottom: 1rem;
 }
 
+.link-page {
+  padding: 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
 .text-page {
   padding: 0px 0px;
   display: -webkit-box;
@@ -199,7 +213,15 @@ hr {
   font-size: 14pt;
 }
 
-/* CHANGING TEXT ON HOVER */
+/*LINKS PAGE*/
+
+img.favicon {
+  display:inline-block;
+  height:1em; transform:
+  translate(0, 0.1em);
+}
+
+/* CHANGING TEXT ON HOVER*/
 .change-text {
   position: relative;
   display: inline-block;
